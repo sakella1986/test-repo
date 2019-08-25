@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "55e77ad8-a385-41d1-8285-fce9825f29b3",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "test",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"loan\":\"123\",\n\"id\":\"1\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8090/kafka/publish?message=2323",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"kafka",
+						"publish"
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "2323"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"loan\":\"989\",\n\"id\":\"1\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/saveOrUpdateLoan/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"saveOrUpdateLoan",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test Copy Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/getLoan/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"getLoan",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test Copy Copy Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"productId\": \"2\",\n\t\"name\": \"test10\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/products/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test Copy Copy Copy Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/deleteBuyer/84c15ee5-4e14-4345-9b43-93bf91e5ae5f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"deleteBuyer",
+						"84c15ee5-4e14-4345-9b43-93bf91e5ae5f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test Copy Copy Copy Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"buyerName\": \"buyer4\",\n\t\"buyerDescription\": \"this is buyer1<b>remobe</b>\",\n\t\"buyerPrice\": \"60\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/buyers/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"buyers",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
